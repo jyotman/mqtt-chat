@@ -1,0 +1,52 @@
+.left, .right {
+    text-align: left;
+    position: relative;
+    display: block;
+    clear: both;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    max-width: 60%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.messageLeft, .messageRight {
+    word-wrap: break-word;
+    padding: 0.6rem;
+    border-radius: 15px;
+}
+
+.messageLeft {
+    background-color: #d3d3d3;
+}
+
+.messageRight {
+    background-color: #00d1b2;
+}
+
+.username {
+    margin-left: 0.4rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#messageList {
+    padding-bottom: 12%;
+    padding-left: 4%;
+    padding-right: 4%;
+    overflow: hidden;
+}
+
+.messageInputBackground {
+    position: fixed;
+    bottom: 0;
+    height: 6%;
+    width: 100%;
+    background-color: white;
+}
