@@ -1,5 +1,5 @@
 {
-  "name": "chat-mqtt",
+  "name": "mqtt-chat",
   "version": "0.0.1",
   "private": true,
   "scripts": {
