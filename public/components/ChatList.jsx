@@ -12,7 +12,7 @@ export default class ChatList extends React.Component {
 
         const username = this.props.username;
 
-        const client = mqtt.connect('ws://mqtt-chat.tk:8883', {
+        const client = mqtt.connect(`ws://${window.location.hostname}:8883`, {
             clientId: username
         });
 
