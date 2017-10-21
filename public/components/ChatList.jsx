@@ -48,7 +48,9 @@ export default class ChatList extends React.Component {
         if (this.state.openChat === false)
             return (
                 <div style={{textAlign: 'center', paddingTop: '2%'}}>
-                    <h3 className="title">Welcome {this.props.username}, enter a username to chat with...</h3>
+                    <h3 className="title">Welcome {this.props.username}</h3>
+                    <p style={{marginBottom: '3%', marginLeft: '5%', marginRight: '5%'}}>Enter the username of the
+                        person you want to chat with.</p>
                     <form onSubmit={this.onChattingWithSubmit}>
                         <div className='field has-addons has-addons-centered'>
                             <p className='control'>
@@ -58,6 +60,10 @@ export default class ChatList extends React.Component {
                         </div>
                         <input type='submit' className='button' value='Submit'/>
                     </form>
+                    <p style={{marginTop: '3%', marginLeft: '5%', marginRight: '5%'}}>If you want to test chat with
+                        yourself, then open this same app in one more <a href={window.location.href}
+                                                                         target="_blank">tab</a> and login with some
+                        other username. Then you can chat between those two usernames.</p>
                 </div>
             );
         else
